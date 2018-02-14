@@ -1,0 +1,49 @@
+<Patch>
+
+<Operation Class="PatchOperationSequence">
+	<success>Always</success>
+	<operations>
+		<li Class="PatchOperationTest">
+			<xpath>/Defs/ThingDef[defName = "Jecrell_Wax"]/label</xpath>
+			<success>Invert</success>
+		</li>
+		<li Class="PatchOperationInsert">
+			<xpath>/Defs/ThingDef[defName = "Jecrell_Bone_Candelabra"]/graphicData</xpath>
+			<value>
+				<costList>
+					<BoneItem>60</BoneItem>
+				</costList>
+			</value>
+		</li>
+		<li Class="PatchOperationInsert">
+			<xpath>/Defs/ThingDef[defName = "Jecrell_Bone_Candelabra"]/graphicData</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>Estate_TechCandleLights</li>
+				</researchPrerequisites>
+			</value>
+		</li>
+		<li Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Jecrell_Bone_Candelabra"]/comps/li[1]/fuelFilter/</xpath>
+			<value>
+				<thingDefs>
+					<li>Jecrell_Wax</li>
+				</thingDefs>
+			</value>
+		</li>
+		<li Class="PatchOperationInsert">
+			<xpath>/Defs/ThingDef[defName = "Jecrell_Bone_Candelabra"]/graphicData</xpath>
+			<value>
+				<designationCategory>Furniture</designationCategory>
+			</value>
+		</li>
+		<li Class="PatchOperationInsert">
+			<xpath>/Defs/ThingDef[defName = "Jecrell_Bone_Candelabra"]/graphicData</xpath>
+			<value>
+				<storedConceptLearnOpportunity>Jecrell_Wax</storedConceptLearnOpportunity>
+			</value>
+		</li>
+	</operations>
+</Operation>
+
+</Patch>
