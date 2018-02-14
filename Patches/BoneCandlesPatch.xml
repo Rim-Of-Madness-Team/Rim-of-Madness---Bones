@@ -1,22 +1,23 @@
 <Patch>
 
 <Operation Class="PatchOperationSequence">
-	<success>Always</success>
 	<operations>
+		<success>Always</success>
 		<li Class="PatchOperationTest">
-			<xpath>/Defs/ThingDef[defName = "Jecrell_Wax"]/label</xpath>
+			<xpath>/Defs/ThingDef[defName = "Jecrell_Wax"]</xpath>
 			<success>Invert</success>
 		</li>
 		<li Class="PatchOperationInsert">
-			<xpath>/Defs/ThingDef[defName = "Jecrell_Bone_Candelabra"]/graphicData</xpath>
+			<xpath>/Defs/ThingDef[defName = "Jecrell_Bone_Candelabra"]/selectable</xpath>
 			<value>
 				<costList>
 					<BoneItem>60</BoneItem>
+					<Jecrell_Wax>20</Jecrell_Wax>
 				</costList>
 			</value>
 		</li>
 		<li Class="PatchOperationInsert">
-			<xpath>/Defs/ThingDef[defName = "Jecrell_Bone_Candelabra"]/graphicData</xpath>
+			<xpath>/Defs/ThingDef[defName = "Jecrell_Bone_Candelabra"]/description</xpath>
 			<value>
 				<researchPrerequisites>
 					<li>Estate_TechCandleLights</li>
@@ -24,21 +25,28 @@
 			</value>
 		</li>
 		<li Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "Jecrell_Bone_Candelabra"]/comps/li[1]/fuelFilter/</xpath>
+			<xpath>/Defs/ThingDef[defName = "Jecrell_Bone_Candelabra"]/comps</xpath>
 			<value>
-				<thingDefs>
-					<li>Jecrell_Wax</li>
-				</thingDefs>
+				<li Class="CompProperties_Refuelable">
+					<fuelConsumptionRate>0.5</fuelConsumptionRate>
+					<fuelCapacity>20.0</fuelCapacity>
+					<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+					<fuelFilter>
+						<thingDefs>
+							<li>Jecrell_Wax</li>
+						</thingDefs>			
+					</fuelFilter>
+				</li>
 			</value>
 		</li>
 		<li Class="PatchOperationInsert">
-			<xpath>/Defs/ThingDef[defName = "Jecrell_Bone_Candelabra"]/graphicData</xpath>
+			<xpath>/Defs/ThingDef[defName = "Jecrell_Bone_Candelabra"]/description</xpath>
 			<value>
 				<designationCategory>Furniture</designationCategory>
 			</value>
 		</li>
 		<li Class="PatchOperationInsert">
-			<xpath>/Defs/ThingDef[defName = "Jecrell_Bone_Candelabra"]/graphicData</xpath>
+			<xpath>/Defs/ThingDef[defName = "Jecrell_Bone_Candelabra"]/description</xpath>
 			<value>
 				<storedConceptLearnOpportunity>Jecrell_Wax</storedConceptLearnOpportunity>
 			</value>
