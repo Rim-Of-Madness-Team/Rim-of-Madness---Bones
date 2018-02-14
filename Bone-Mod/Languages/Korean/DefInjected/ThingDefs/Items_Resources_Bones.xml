@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <BoneItem.label>뼈</BoneItem.label>
+    <BoneItem.description>살아있는 생물에게서 빼낸 뼈 입니다. 구조물이나 무기를 만드는데 유용합니다. 비상시에는 무기로도 사용할 수 있습니다.</BoneItem.description>
+
+    <Bonecrete.label>본크리트</Bonecrete.label>
+    <Bonecrete.description>뼈에서 추출해낸 수산화 아파타이트 미소구체입니다. 석재와 같이 사용할 수 있습니다.</Bonecrete.description>
+
+    <BonePlastic.label>칼슘 중합체</BonePlastic.label>
+    <BonePlastic.description>뼈에서 추출해낸 수산화 아파타이트와 스테아르산 칼슘으로 구성된 초경량 플라스틱입니다. 금속재료와 같이 사용할 수 있지만, 금속보다는 약합니다..</BonePlastic.description>
+
+    <BoneChina.label>골회</BoneChina.label>
+    <BoneChina.description>고온에서 뼈를 구워 만든 재 입니다. 본차이나를 만드는데 사용할 수 있습니다.</BoneChina.description>
+
+</LanguageData>

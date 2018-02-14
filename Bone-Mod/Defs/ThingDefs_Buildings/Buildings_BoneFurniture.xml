@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="FurnitureWithQualityBase" ParentName="FurnitureBase" Abstract="True">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>BoneChair</defName>
+    <label>bone chair</label>
+	<description>A chair made from bones.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/SkullChair</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,3.5)</drawSize>
+      <shadowData>
+        <volume>(0.6, 0.6, 0.6)</volume>
+      </shadowData>
+      <damageData>
+        <rectN>(0,0,1,0.703125)</rectN>
+        <rectS>(0.09375,0,0.84375,1)</rectS>
+        <rectE>(0,0,0.84375,0.625)</rectE>
+        <rectW>(0.15625,0,0.84375,0.625)</rectW>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>220</MaxHitPoints>
+      <WorkToBuild>7500</WorkToBuild>
+      <Mass>18</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+      <Comfort>0.8</Comfort>
+    </statBases>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <costList>
+      <BoneItem>300</BoneItem>
+    </costList>
+    <pathCost>30</pathCost>
+    <fillPercent>0.40</fillPercent>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+  </ThingDef>
+  
+    <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>Jecrell_Bone_Candelabra</defName>
+    <label>skull candles</label>
+    <description>A pile of bones topped by wax candles to light an area. Can be automatically refueled with wax. Produces a small amount of heat.</description>
+    <category>Building</category> 
+    <graphicData>
+      <texPath>Building/Furniture/jecrellSkullCandles</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+	  <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <rect>(0.35,0.35,0.3,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+	<pathCost>8</pathCost>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.15</fillPercent>
+    <statBases>
+      <Mass>4.0</Mass>	
+      <MaxHitPoints>110</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0</Flammability>
+	  <Beauty>10</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <Jecrell_Wax>20</Jecrell_Wax>
+    </costList>
+    <soundImpactDefault>BulletImpactGround</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0.5</fuelConsumptionRate>
+        <fuelCapacity>20.0</fuelCapacity>
+        <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+        <fuelFilter>
+        </fuelFilter>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>0.5</heatPerSecond>
+        <heatPushMaxTemperature>23</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_Fire4Overlay">
+        <flameSize>2.0</flameSize>
+        <offset>(0.22,0.1,0.44)</offset>
+      </li>
+      <li Class="CompProperties_Fire2Overlay">
+        <flameSize>2.0</flameSize>
+        <offset>(0,0.1,0.48)</offset>
+      </li>
+      <li Class="CompProperties_Fire3Overlay">
+        <flameSize>2.0</flameSize>
+        <offset>(-0.22,0.1,0.44)</offset>
+      </li>
+    </comps>
+</ThingDef>
+  
+</Defs>

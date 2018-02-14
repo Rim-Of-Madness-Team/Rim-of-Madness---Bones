@@ -1,0 +1,26 @@
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Refinery"]/recipes</xpath>
+		<value>
+			<li>MakeBonecrete</li>
+			<li>MakeBonePlastic</li>
+			<li>MakeBonePlasteel</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]/recipes</xpath>
+		<value>
+			<li>MakeBoneChina</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Campfire"]/recipes</xpath>
+		<value>
+			<li>MakeBoneChina</li>
+		</value>
+	</Operation>
+
+</Patch>
