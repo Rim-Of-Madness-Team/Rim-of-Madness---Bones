@@ -1,0 +1,6 @@
+C:\Users\Michael Whitehead\Documents\GitHub\Bone-Mod\Assemblies\BoneMod.dll
+C:\Users\Michael Whitehead\Documents\GitHub\Bone-Mod\Source\obj\Debug\BoneMod.csproj.CoreCompileInputs.cache
+C:\Users\Michael Whitehead\Documents\GitHub\Bone-Mod\Source\obj\Debug\BoneMod.dll
+C:\SteamLibrary\steamapps\common\RimWorld\Mods\Bone-Mod\Assemblies\BoneMod.dll
+C:\SteamLibrary\steamapps\common\RimWorld\Mods\Bone-Mod\Source\obj\Debug\BoneMod.csproj.CoreCompileInputs.cache
+C:\SteamLibrary\steamapps\common\RimWorld\Mods\Bone-Mod\Source\obj\Debug\BoneMod.dll

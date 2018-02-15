@@ -7,11 +7,14 @@ using RimWorld;
 
 namespace BoneMod
 {
+
     [StaticConstructorOnStartup]
     static class BoneMod
     {
+
         static BoneMod()
         {
+
             var harmony = HarmonyInstance.Create("com.rimworld.bonemod");
 
 
@@ -39,7 +42,8 @@ namespace BoneMod
             // custom code to modify list contents
             // add vanilla leather line just to verify that output is modified
             StatDef BoneAmount = DefDatabase<StatDef>.GetNamed("BoneAmount", true);
-            NewList.Add(new StatDrawEntry(BoneAmount.category, BoneAmount, __instance.InnerPawn.GetStatValue(BoneAmount, true), StatRequest.For(__instance.InnerPawn), ToStringNumberSense.Undefined));
+            float pawnBoneCount = __instance.InnerPawn.GetStatValue(BoneAmount, true) * BoneModSettings.boneFactor;
+            NewList.Add(new StatDrawEntry(BoneAmount.category, BoneAmount, pawnBoneCount, StatRequest.For(__instance.InnerPawn), ToStringNumberSense.Undefined));
 
             // convert list to IEnumerable to match the caller's expectations
             IEnumerable<StatDrawEntry> output = NewList;
@@ -55,7 +59,7 @@ namespace BoneMod
     {
         static void Postfix(Verse.Pawn __instance, ref IEnumerable<Thing> __result, float efficiency)
         {
-            int boneCount = GenMath.RoundRandom(__instance.GetStatValue(DefDatabase<StatDef>.GetNamed("BoneAmount", true), true) * efficiency);
+            int boneCount = GenMath.RoundRandom(__instance.GetStatValue(DefDatabase<StatDef>.GetNamed("BoneAmount", true), true) * BoneModSettings.boneFactor * efficiency);
             if (boneCount > 0)
             {
 

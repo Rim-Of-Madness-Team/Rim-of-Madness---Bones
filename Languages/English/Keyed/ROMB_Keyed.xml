@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<ROM_SettingsBoneMultiplier>Spider spawn rate multiplier</ROM_SettingsBoneMultiplier>
+
+<ROM_SettingsBoneMultiplier_Num>Bone multiplier ({0}x)</ROM_SettingsBoneMultiplier_Num>
+
+<ROM_SettingsBoneMultiplier_None>Bone multiplier (None)</ROM_SettingsBoneMultiplier_None>
+
+</LanguageData>

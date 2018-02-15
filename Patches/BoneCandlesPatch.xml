@@ -1,8 +1,8 @@
 <Patch>
 
 <Operation Class="PatchOperationSequence">
+	<success>Always</success>
 	<operations>
-		<success>Always</success>
 		<li Class="PatchOperationTest">
 			<xpath>/Defs/ThingDef[defName = "Jecrell_Wax"]</xpath>
 			<success>Invert</success>
