@@ -1,52 +1,78 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <ThingDef Name="FurnitureWithQualityBase" ParentName="FurnitureBase" Abstract="True">
-    <comps>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-    </comps>
-  </ThingDef>
   
-  <ThingDef ParentName="FurnitureWithQualityBase">
-    <defName>BoneChair</defName>
-    <label>bone chair</label>
-	<description>A chair made from bones.</description>
-    <graphicData>
-      <texPath>Things/Building/Furniture/SkullChair/SkullChair</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3.5,3.5)</drawSize>
-      <shadowData>
-        <volume>(0.6, 0.6, 0.6)</volume>
-      </shadowData>
-      <damageData>
-        <rectN>(0,0,1,0.703125)</rectN>
-        <rectS>(0.09375,0,0.84375,1)</rectS>
-        <rectE>(0,0,0.84375,0.625)</rectE>
-        <rectW>(0.15625,0,0.84375,0.625)</rectW>
-      </damageData>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <statBases>
-      <MaxHitPoints>220</MaxHitPoints>
-      <WorkToBuild>7500</WorkToBuild>
-      <Mass>18</Mass>
-      <Flammability>1.0</Flammability>
-      <Beauty>1</Beauty>
-      <Comfort>0.8</Comfort>
-    </statBases>
-    <socialPropernessMatters>true</socialPropernessMatters>
-    <costList>
-      <BoneItem>300</BoneItem>
-    </costList>
-    <pathCost>30</pathCost>
-    <fillPercent>0.40</fillPercent>
-    <defaultPlacingRot>South</defaultPlacingRot>
-    <building>
-      <isSittable>true</isSittable>
-    </building>
-  </ThingDef>
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>BoneChair</defName>
+		<label>bone chair</label>
+		<description>A chair made from bones.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/SkullChair/SkullChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<shadowData>
+				<volume>(0.6, 0.6, 0.6)</volume>
+			</shadowData>
+			<damageData>
+				<rectN>(0,0,1,0.703125)</rectN>
+				<rectS>(0.09375,0,0.84375,1)</rectS>
+				<rectE>(0,0,0.84375,0.625)</rectE>
+				<rectW>(0.15625,0,0.84375,0.625)</rectW>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>18</Mass>
+			<Flammability>0.0</Flammability>
+			<Beauty>1</Beauty>
+			<Comfort>0.8</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<costList>
+			<BoneItem>300</BoneItem>
+		</costList>
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>BoneThrone</defName>
+		<label>skull throne</label>
+		<description>A grand throne, made from bones.</description>
+		<size>(3,2)</size>
+		<graphicData>
+			<texPath>Things/Building/Furniture/jecrellXenSkullThrone</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,2)</drawSize>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>40</Mass>
+			<Flammability>0.0</Flammability>
+			<Beauty>30</Beauty>
+			<Comfort>1.2</Comfort>
+		</statBases>
+		<passability>Standable</passability>
+		<costList>
+			<BoneItem>1000</BoneItem>
+		</costList>
+		<pathCost>60</pathCost>
+		<rotatable>false</rotatable>
+		<fillPercent>0.45</fillPercent>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+	</ThingDef>
   
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>Jecrell_Bone_Candelabra</defName>
@@ -93,20 +119,6 @@
         <heatPerSecond>0.5</heatPerSecond>
         <heatPushMaxTemperature>23</heatPushMaxTemperature>
       </li>
-	  <!--
-      <li Class="CompProperties_Fire4Overlay">
-        <flameSize>2.0</flameSize>
-        <offset>(0.22,0.1,0.44)</offset>
-      </li>
-      <li Class="CompProperties_Fire2Overlay">
-        <flameSize>2.0</flameSize>
-        <offset>(0,0.1,0.48)</offset>
-      </li>
-      <li Class="CompProperties_Fire3Overlay">
-        <flameSize>2.0</flameSize>
-        <offset>(-0.22,0.1,0.44)</offset>
-      </li>
-	  -->
     </comps>
 </ThingDef>
   

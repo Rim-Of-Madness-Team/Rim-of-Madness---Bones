@@ -37,6 +37,55 @@
 						</thingDefs>			
 					</fuelFilter>
 				</li>
+				<li Class="CompOverlays.CompProperties_Overlays">
+					<overlays>
+						<li>
+							<graphicData>
+								<texPath>Things/Special/Fire</texPath>
+								<graphicClass>ArkhamEstate.Graphic_CustomFlicker</graphicClass>
+								<shaderType>TransparentPostLight</shaderType>
+								<drawSize>0.27</drawSize>
+							</graphicData>
+							<offset>(-0.3,0.1,0.1)</offset>
+						</li>
+						<li>
+							<graphicData>
+								<texPath>Things/Special/Fire</texPath>
+								<graphicClass>ArkhamEstate.Graphic_CustomFlicker</graphicClass>
+								<shaderType>TransparentPostLight</shaderType>
+								<drawSize>0.27</drawSize>
+							</graphicData>
+							<offset>(-0.15,0.1,0.2)</offset>
+						</li>
+						<li>
+							<graphicData>
+								<texPath>Things/Special/Fire</texPath>
+								<graphicClass>ArkhamEstate.Graphic_CustomFlicker</graphicClass>
+								<shaderType>TransparentPostLight</shaderType>
+								<drawSize>0.27</drawSize>
+							</graphicData>
+							<offset>(0.15,0.1,0.2)</offset>
+						</li>
+						<li>
+							<graphicData>
+								<texPath>Things/Special/Fire</texPath>
+								<graphicClass>ArkhamEstate.Graphic_CustomFlicker</graphicClass>
+								<shaderType>TransparentPostLight</shaderType>
+								<drawSize>0.27</drawSize>
+							</graphicData>
+							<offset>(0.3,0.1,0.1)</offset>
+						</li>
+						<li>
+							<graphicData>
+								<texPath>Things/Special/Fire</texPath>
+								<graphicClass>ArkhamEstate.Graphic_CustomFlicker</graphicClass>
+								<shaderType>TransparentPostLight</shaderType>
+								<drawSize>0.27</drawSize>
+							</graphicData>
+							<offset>(0,0.1,0.25)</offset>
+						</li>
+					</overlays>
+				</li>
 			</value>
 		</li>
 		<li Class="PatchOperationInsert">
