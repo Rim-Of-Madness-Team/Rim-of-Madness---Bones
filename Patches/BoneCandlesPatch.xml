@@ -44,7 +44,7 @@
 								<texPath>Things/Special/Fire</texPath>
 								<graphicClass>ArkhamEstate.Graphic_CustomFlicker</graphicClass>
 								<shaderType>TransparentPostLight</shaderType>
-								<drawSize>0.27</drawSize>
+								<drawSize>0.175</drawSize>
 							</graphicData>
 							<offset>(-0.3,0.1,0.1)</offset>
 						</li>
@@ -53,7 +53,7 @@
 								<texPath>Things/Special/Fire</texPath>
 								<graphicClass>ArkhamEstate.Graphic_CustomFlicker</graphicClass>
 								<shaderType>TransparentPostLight</shaderType>
-								<drawSize>0.27</drawSize>
+								<drawSize>0.175</drawSize>
 							</graphicData>
 							<offset>(-0.15,0.1,0.2)</offset>
 						</li>
@@ -62,7 +62,7 @@
 								<texPath>Things/Special/Fire</texPath>
 								<graphicClass>ArkhamEstate.Graphic_CustomFlicker</graphicClass>
 								<shaderType>TransparentPostLight</shaderType>
-								<drawSize>0.27</drawSize>
+								<drawSize>0.175</drawSize>
 							</graphicData>
 							<offset>(0.15,0.1,0.2)</offset>
 						</li>
@@ -71,7 +71,7 @@
 								<texPath>Things/Special/Fire</texPath>
 								<graphicClass>ArkhamEstate.Graphic_CustomFlicker</graphicClass>
 								<shaderType>TransparentPostLight</shaderType>
-								<drawSize>0.27</drawSize>
+								<drawSize>0.175</drawSize>
 							</graphicData>
 							<offset>(0.3,0.1,0.1)</offset>
 						</li>
@@ -80,9 +80,9 @@
 								<texPath>Things/Special/Fire</texPath>
 								<graphicClass>ArkhamEstate.Graphic_CustomFlicker</graphicClass>
 								<shaderType>TransparentPostLight</shaderType>
-								<drawSize>0.27</drawSize>
+								<drawSize>0.175</drawSize>
 							</graphicData>
-							<offset>(0,0.1,0.25)</offset>
+							<offset>(0,0.1,0.275)</offset>
 						</li>
 					</overlays>
 				</li>
