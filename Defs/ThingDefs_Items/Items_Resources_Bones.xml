@@ -184,5 +184,71 @@
       </statFactors>
     </stuffProps>
 	</ThingDef>
+	
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>ROMB_Marrow</defName>
+		<label>bone marrow</label>
+		<thingClass>ThingWithComps</thingClass>
+		<thingCategories>
+			<li>Foods</li>
+		</thingCategories>
+		<description>A semi-solid meaty tissue extracted from bones. Tastes bland, but not offensive. It lasts a very long time without refrigeration.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Marrow</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>1.5</MarketValue>
+			<Mass>0.018</Mass>
+			<WorkToMake>700</WorkToMake>
+			<DeteriorationRate>2</DeteriorationRate>
+		</statBases>
+		<ingestible>
+			<foodType>Meal</foodType>
+			<preferability>MealSimple</preferability>
+			<nutrition>0.05</nutrition>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
+		</ingestible>
+		<comps>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>80</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>ROMB_Gelatin</defName>
+		<label>gelatin</label>
+		<description>Basically Jello. It is smooth, rich, and brings joy to those who consume it. Because of its unique biological properties, it can nourish almost any creature and never rots.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Resource/Jello</texPath>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>8.0</MarketValue>
+			<Mass>0.025</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<ingestible>
+			<foodType>AnimalProduct</foodType>
+			<preferability>MealFine</preferability>
+			<nutrition>0.05</nutrition>
+			<joy>0.08</joy>
+			<joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+	</ThingDef>
   
 </Defs>

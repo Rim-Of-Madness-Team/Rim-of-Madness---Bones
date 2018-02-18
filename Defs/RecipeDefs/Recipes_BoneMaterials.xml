@@ -129,4 +129,63 @@
 		<researchPrerequisite>BoneRefineII</researchPrerequisite>
 	</RecipeDef>
 	
+	<RecipeDef>
+		<defName>MakeMarrowFromBone</defName>
+		<label>extract bone marrow</label>
+		<description>Crack open bones to get to the marrow inside.</description>
+		<jobString>Extracting marrow from bones.</jobString>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<workAmount>800</workAmount>
+		<workSkill>Cooking</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BoneItem</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BoneItem</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ROMB_Marrow>10</ROMB_Marrow>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MakeGelatinFromMarrow</defName>
+		<label>make gelatin</label>
+		<description>Boil marrow to produce delicious gelatin</description>
+		<jobString>Making gelatin.</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>1000</workAmount>
+		<workSkill>Cooking</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ROMB_Marrow</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ROMB_Marrow</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ROMB_Gelatin>1</ROMB_Gelatin>
+		</products>
+		<researchPrerequisite>BoneRefine</researchPrerequisite>
+	</RecipeDef>
+	
 </Defs>
