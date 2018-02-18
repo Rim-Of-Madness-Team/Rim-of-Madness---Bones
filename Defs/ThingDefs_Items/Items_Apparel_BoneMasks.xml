@@ -26,7 +26,7 @@
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/WarMask/WarMask</wornGraphicPath>
+      <wornGraphicPath>Things/Item/Apparel/SkullMask/SkullMask</wornGraphicPath>
       <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
       <layers>
         <li>Overhead</li>
@@ -49,9 +49,6 @@
 		<li>ElectricTailoringBench</li>
       </recipeUsers>
       <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
-      <factionPrerequisiteTags>
-        <li>Tribal</li>
-      </factionPrerequisiteTags>
     </recipeMaker>
   </ThingDef>
   
@@ -80,7 +77,7 @@
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/WarMask/WarMask</wornGraphicPath>
+      <wornGraphicPath>Things/Item/Apparel/SkullMask/DeerSkullMask</wornGraphicPath>
       <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
       <layers>
         <li>Overhead</li>
@@ -103,9 +100,6 @@
 		<li>ElectricTailoringBench</li>
       </recipeUsers>
       <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
-      <factionPrerequisiteTags>
-        <li>Tribal</li>
-      </factionPrerequisiteTags>
     </recipeMaker>
   </ThingDef>
   
