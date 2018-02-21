@@ -20,7 +20,8 @@
       <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
     </statBases>
     <equippedStatOffsets>
-      <PainShockThreshold>0.10</PainShockThreshold>
+	    <PainShockThreshold>0.10</PainShockThreshold>
+	    <PsychicSensitivity>-0.10</PsychicSensitivity>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -71,7 +72,8 @@
       <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
     </statBases>
     <equippedStatOffsets>
-      <PainShockThreshold>0.10</PainShockThreshold>
+	    <PainShockThreshold>0.10</PainShockThreshold>
+	    <PsychicSensitivity>-0.10</PsychicSensitivity>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
