@@ -3,9 +3,11 @@
 <Operation Class="PatchOperationSequence">
 	<success>Always</success>
 	<operations>
-		<li Class="PatchOperationTest">
-			<xpath>/Defs/ThingDef[defName = "Jecrell_Wax"]</xpath>
-			<success>Invert</success>
+		<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Call of Cthulhu - Industrial Age</li>
+				<li>777197241</li>
+			</mods>
 		</li>
 		<li Class="PatchOperationInsert">
 			<xpath>/Defs/ThingDef[defName = "Jecrell_Bone_Candelabra"]/selectable</xpath>
