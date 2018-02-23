@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <MakeBoneChina.label>骨灰を作る</MakeBoneChina.label>
+    <MakeBoneChina.description>骨を高熱度で燃やし、骨灰を作る。</MakeBoneChina.description>
+    <MakeBoneChina.jobString>骨灰を作っている</MakeBoneChina.jobString>
+
+    <MakeBonecrete.label>ボーンクリートを作る</MakeBonecrete.label>
+    <MakeBonecrete.description>骨から水酸燐灰石を抽出し、精製してボーンクリートを作る。</MakeBonecrete.description>
+    <MakeBonecrete.jobString>ボーンクリートを作っている</MakeBonecrete.jobString>
+
+    <MakeBonePlastic.label>カルシウムポリマーを作る</MakeBonePlastic.label>
+    <MakeBonePlastic.description>骨から水酸燐灰石とカルシウムステアレートを抽出し、精製してカルシウムポリマーを作る。</MakeBonePlastic.description>
+    <MakeBonePlastic.jobString>カルシウムポリマーを作っている</MakeBonePlastic.jobString>
+
+    <MakeBonePlasteel.label>プラスチールを合成する</MakeBonePlasteel.label>
+    <MakeBonePlasteel.description>スチールとカルシウムポリマーを精製し、合成してプラスチールを作る。</MakeBonePlasteel.description>
+    <MakeBonePlasteel.jobString>プラスチールを合成中</MakeBonePlasteel.jobString>
+
+</LanguageData>

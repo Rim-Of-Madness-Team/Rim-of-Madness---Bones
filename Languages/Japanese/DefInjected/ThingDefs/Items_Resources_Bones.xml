@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <BoneItem.label>骨</BoneItem.label>
+    <BoneItem.description>死体からとった骨。建築や武器の製造に使える。そのまま鈍器にもなる。</BoneItem.description>
+
+    <Bonecrete.label>ボーンクリート</Bonecrete.label>
+    <Bonecrete.description>骨から抽出された水酸燐灰石ミクロスフェアを材料に用いた軽いコンクリート。石材の代わりに使える。</Bonecrete.description>
+
+    <BonePlastic.label>カルシウムポリマー</BonePlastic.label>
+    <BonePlastic.description>骨から抽出された水酸燐灰石とカルシウムステアレートからできた、極めて軽いプラスチック。金属の代わりに建材として使えるが、ほとんどの金属ほど頑丈ではない。</BonePlastic.description>
+
+    <BoneChina.label>骨灰</BoneChina.label>
+    <BoneChina.description>高熱度で燃やされた骨からできた灰。ボーンチャイナの芸術品などの生地となる。</BoneChina.description>
+
+    <ROMB_Marrow.label>骨髄</ROMB_Marrow.label>
+    <ROMB_Marrow.description>骨から抽出された柔らかい組織。地味な味だが、悪くはない。長期間常温で保存できる。</ROMB_Marrow.description>
+
+    <ROMB_Gelatin.label>ゼラチン</ROMB_Gelatin.label>
+    <ROMB_Gelatin.description>なめからで、リッチで、特別な存在だと感じさせてくれる。どんな生物にでも栄養を与えるし、腐らない。もはや不思議である。</ROMB_Gelatin.description>
+
+</LanguageData>
