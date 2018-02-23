@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ROM_SettingsBoneMultiplier>クモのスポーンレート倍数</ROM_SettingsBoneMultiplier>
+
+    <ROM_SettingsBoneMultiplier_Num>骨の採取倍数 ({0}倍)</ROM_SettingsBoneMultiplier_Num>
+
+    <ROM_SettingsBoneMultiplier_None>骨の採取倍数 (無し)</ROM_SettingsBoneMultiplier_None>
+
+</LanguageData>

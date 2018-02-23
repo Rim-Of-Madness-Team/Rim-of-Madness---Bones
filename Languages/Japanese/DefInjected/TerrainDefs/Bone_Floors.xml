@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <BoneFloor.label>骨の床</BoneFloor.label>
+    <BoneFloor.description>骨の床。 reuse concrete tiling</BoneFloor.description>
+
+    <BoneChinaFloor.label>ボーンチャイナの床</BoneChinaFloor.label>
+    <BoneChinaFloor.description>固めたボーンチャイナのタイル。 reuse stone tiles</BoneChinaFloor.description>
+
+</LanguageData>
