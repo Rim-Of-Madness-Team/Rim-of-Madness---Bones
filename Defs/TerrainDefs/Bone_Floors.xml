@@ -37,6 +37,24 @@
 	</TerrainDef>
 	
 	<TerrainDef ParentName="FloorBase">
+		<defName>BoneFloor_Blackened</defName>
+		<label>bone floor (blackened)</label>
+		<description>Bone floors. Fast to walk on and very quick to build, but neutral in terms of looks.</description>
+		<texturePath>Terrain/Surfaces/BoneFloor_Blackened</texturePath>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>250</renderPrecedence>
+		<color>(175,175,175)</color>
+		<statBases>
+			<WorkToBuild>85</WorkToBuild>
+		</statBases>
+		<costList>
+			<BoneItem>3</BoneItem>
+		</costList>
+		<constructEffect>ConstructWood</constructEffect>
+		<designationCategory>Floors</designationCategory>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="FloorBase">
 		<defName>BoneChinaFloor</defName>
 		<label>bone china floor</label>
 		<description>Hardened bone china tiles. Pretty, but labor and material-intensive.</description>
@@ -53,5 +71,44 @@
 		</costList>
 		<designationCategory>Floors</designationCategory>
 	</TerrainDef>
+	
+		
+	<TerrainDef ParentName="FloorBase">
+		<defName>BoneFloor_Ashen</defName>
+		<label>bone floor (ash)</label>
+		<description>Hardened bone floors paved with ashes. Somewhat pretty, but labor and material-intensive.</description>
+		<texturePath>Terrain/Surfaces/BoneFloor_Ash</texturePath>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>240</renderPrecedence>
+		<color>(170,170,170)</color>
+		<statBases>
+			<Beauty>1</Beauty>
+			<WorkToBuild>300</WorkToBuild>
+		</statBases>
+		<costList>
+			<BoneItem>3</BoneItem>
+			<BoneChina>2</BoneChina>
+		</costList>
+		<designationCategory>Floors</designationCategory>
+	</TerrainDef>
+		
+	<TerrainDef ParentName="FloorBase">
+    <defName>BoneFloor_Tile</defName>
+    <label>bone tile</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Bone tiles, hardened together and polished. Pretty, but labor and material-intensive.</description>
+    <texturePath>Terrain/Surfaces/BoneFloor_Tile</texturePath>
+    <color>(170,170,170)</color>
+    <statBases>
+      <WorkToBuild>700</WorkToBuild>
+			<Beauty>1</Beauty>
+    </statBases>
+    <costList>
+      <BoneChina>7</BoneChina>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotKey>Misc1</designationHotKey>
+  </TerrainDef>
+  
 	
 </Defs>

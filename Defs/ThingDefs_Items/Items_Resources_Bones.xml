@@ -7,7 +7,7 @@
     <description>Bones from a once living thing. Useful for building structures or weapons. A bone can be used as a weapon in a pinch.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Bone</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
     <soundInteract>Wood_Drop</soundInteract>
