@@ -2,9 +2,9 @@
 <LanguageData>
 
     <BoneFloor.label>骨の床</BoneFloor.label>
-    <BoneFloor.description>骨の床。 reuse concrete tiling</BoneFloor.description>
+    <BoneFloor.description>骨の床。安価で人が動きやすいが、地味な見た目です。</BoneFloor.description>
 
     <BoneChinaFloor.label>ボーンチャイナの床</BoneChinaFloor.label>
-    <BoneChinaFloor.description>固めたボーンチャイナのタイル。 reuse stone tiles</BoneChinaFloor.description>
+    <BoneChinaFloor.description>固めたボーンチャイナのタイル。奇麗だが、資材と手数がかかる。</BoneChinaFloor.description>
 
 </LanguageData>

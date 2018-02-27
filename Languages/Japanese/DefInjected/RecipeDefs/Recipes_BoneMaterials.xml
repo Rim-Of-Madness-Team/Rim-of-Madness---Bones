@@ -17,4 +17,12 @@
     <MakeBonePlasteel.description>スチールとカルシウムポリマーを精製し、合成してプラスチールを作る。</MakeBonePlasteel.description>
     <MakeBonePlasteel.jobString>プラスチールを合成中</MakeBonePlasteel.jobString>
 
+    <MakeMarrowFromBone.label>骨髄を抽出する</MakeMarrowFromBone.label>
+    <MakeMarrowFromBone.description>骨を割って中の骨髄をとる。</MakeMarrowFromBone.description>
+    <MakeMarrowFromBone.jobString>骨から骨髄を抽出中</MakeMarrowFromBone.jobString>
+
+    <MakeGelatinFromMarrow.label>ゼラチンを作る</MakeGelatinFromMarrow.label>
+    <MakeGelatinFromMarrow.description>骨髄を茹でておいしいゼラチンを作る。</MakeGelatinFromMarrow.description>
+    <MakeGelatinFromMarrow.jobString>ゼラチンを作っている</MakeGelatinFromMarrow.jobString>
+
 </LanguageData>
