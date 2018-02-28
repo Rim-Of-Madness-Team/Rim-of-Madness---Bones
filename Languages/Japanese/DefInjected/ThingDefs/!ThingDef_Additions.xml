@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <!-- ==================== Items_Resources_Bones.xml ========================== -->
+
+    <BoneChina.stuffProps.stuffAdjective>ボーンチャイナ</BoneChina.stuffProps.stuffAdjective>
+
+    <BoneItem.stuffProps.stuffAdjective>骨の</BoneItem.stuffProps.stuffAdjective>
+
+</LanguageData>

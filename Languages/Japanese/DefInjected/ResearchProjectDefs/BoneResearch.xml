@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <BoneRefine.label>骨精製</BoneRefine.label>
+    <BoneRefine.description>製油装置にて、ボーンクリートとカルシウムポリマーの製造を可能にする。</BoneRefine.description>
+
+    <BoneRefineII.label>先進骨精製</BoneRefineII.label>
+    <BoneRefineII.description>ナノポリマー精製によるスチールとカルシウムポリマーを用いたプラスチール製造を可能にする。</BoneRefineII.description>
+
+</LanguageData>

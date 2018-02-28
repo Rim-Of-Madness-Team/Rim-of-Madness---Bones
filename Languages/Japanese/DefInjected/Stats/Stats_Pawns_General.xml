@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <BoneAmount.label>骨の量</BoneAmount.label>
+    <BoneAmount.description>この生物から得られる骨の量。</BoneAmount.description>
+
+</LanguageData>
