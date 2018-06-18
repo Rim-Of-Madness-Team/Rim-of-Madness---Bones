@@ -4,8 +4,8 @@
     <BoneChair.label>骨の椅子</BoneChair.label>
     <BoneChair.description>骨から組み立てた椅子。</BoneChair.description>
 
-    <BoneChair.label>頭蓋骨の王座</BoneChair.label>
-    <BoneChair.description>骨から組み立てた荘厳な王座。</BoneChair.description>
+    <BoneThrone.label>頭蓋骨の王座</BoneThrone.label>
+    <BoneThrone.description>骨から組み立てた荘厳な王座。</BoneThrone.description>
 
     <Jecrell_Bone_Candelabra.label>頭蓋骨のろうそく</Jecrell_Bone_Candelabra.label>
     <Jecrell_Bone_Candelabra.description>骨の山にのせたろうそく。ろうを足すことで燃料を補給できる。わずかな熱を発する。</Jecrell_Bone_Candelabra.description>
