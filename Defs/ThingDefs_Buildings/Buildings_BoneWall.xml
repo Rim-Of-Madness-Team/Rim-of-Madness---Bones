@@ -37,9 +37,6 @@
         <edgeRight>Damage/Edge</edgeRight>
       </damageData>
     </graphicData>
-    <blueprintGraphicData>
-      <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
-    </blueprintGraphicData>
     <uiIconPath>Things/Building/Wall/jecrell_Skull_Wall_MenuIcon</uiIconPath>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
@@ -69,7 +66,10 @@
 			<BoneItem>5</BoneItem>
 		</costList>
     <building>
-      <isInert>true</isInert>
+		<isInert>true</isInert>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+		</blueprintGraphicData>
     </building>
     <damageMultipliers>
       <li>

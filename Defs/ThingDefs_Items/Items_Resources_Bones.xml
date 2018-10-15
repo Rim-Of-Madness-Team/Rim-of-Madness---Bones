@@ -30,7 +30,7 @@
       <color>(175,175,175)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -43,7 +43,6 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
     <thingCategories>
       <li>ResourcesRaw</li>
     </thingCategories>
@@ -67,7 +66,7 @@
     <description>A light-weight concrete formed from hydroxyapatite microspheres extracted from bone. Can be used to build stone stuff.</description>
     <graphicData>
       <texPath>Things/Item/Resource/StoneBlocks</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <color>(170,170,170)</color>
     </graphicData>
     <soundInteract>ChunkRock_Drop</soundInteract>
@@ -89,7 +88,7 @@
       <commonality>0.00</commonality>
       <constructEffect>ConstructMetal</constructEffect>
       <color>(170,170,170)</color>
-      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
       <statFactors>
@@ -107,7 +106,7 @@
     <description>An extremely light-weight plastic formed from hydroxyapatite and calcium stearate extracted from bone. Can be used to build metal stuff, but is weaker than metals.</description>
     <graphicData>
       <texPath>Things/Item/Resource/StoneBlocks</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <color>(180,180,180)</color>
     </graphicData>
     <soundInteract>Wood_Drop</soundInteract>
@@ -129,7 +128,7 @@
       <commonality>0.00</commonality>
       <constructEffect>ConstructMetal</constructEffect>
       <color>(180,180,180)</color>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
       <statFactors>
@@ -147,7 +146,7 @@
     <description>ash made from bones burned at extremely high temperatures. Can be used to make art pieces out of bone china.</description>
     <graphicData>
       <texPath>Things/Item/Resource/StoneBlocks</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <color>(170,170,170)</color>
     </graphicData>
     <soundInteract>ChunkRock_Drop</soundInteract>
@@ -170,7 +169,7 @@
       <commonality>0.00</commonality>
       <constructEffect>ConstructMetal</constructEffect>
       <color>(170,170,170)</color>
-      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
 	  <statOffsets>
@@ -203,20 +202,22 @@
 			<Mass>0.018</Mass>
 			<WorkToMake>700</WorkToMake>
 			<DeteriorationRate>2</DeteriorationRate>
+			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
 			<foodType>Meal</foodType>
 			<preferability>MealSimple</preferability>
-			<nutrition>0.05</nutrition>
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
 			<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
 		</ingestible>
 		<comps>
-		  <li Class="CompProperties_Rottable">
-			<daysToRotStart>80</daysToRotStart>
-			<rotDestroys>true</rotDestroys>
-		  </li>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>80</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients" />
+			<li Class="CompProperties_FoodPoisonable" />
 		</comps>
 	</ThingDef>
 	
@@ -235,12 +236,12 @@
 			<MaxHitPoints>60</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>6</DeteriorationRate>
+			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<tickerType>Rare</tickerType>
 		<ingestible>
 			<foodType>AnimalProduct</foodType>
 			<preferability>MealFine</preferability>
-			<nutrition>0.05</nutrition>
 			<joy>0.08</joy>
 			<joyKind>Gluttonous</joyKind>
 			<ingestEffect>EatVegetarian</ingestEffect>

@@ -105,7 +105,7 @@
     </recipeMaker>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorMakeableBase">
+  <ThingDef ParentName="ArmorSmithableBase">
     <defName>Sihv_Apparel_BoneArmor</defName>
     <label>bone armor</label>
     <description>A vest with bone plates on the chest and back. Protects against gunfire.</description>
