@@ -74,7 +74,7 @@
 		</building>
 	</ThingDef>
   
-  <ThingDef ParentName="BuildingBase">
+  <!--ThingDef ParentName="BuildingBase">
     <defName>Jecrell_Bone_Candelabra</defName>
     <label>skull candles</label>
     <description>A pile of bones topped by wax candles to light an area. Can be automatically refueled with wax. Produces a small amount of heat.</description>
@@ -117,6 +117,6 @@
     <tradeTags>
       <li>Furniture</li>
     </tradeTags>
-</ThingDef>
+</ThingDef-->
   
 </Defs>

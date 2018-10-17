@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<TerrainDef Name="FloorBase" Abstract="True">
-		<layerable>true</layerable>
-		<affordances>
-			<li>Light</li>
-			<li>Heavy</li>
-			<li>SmoothHard</li>
-		</affordances>
-		<statBases>
-			<WorkToBuild>135</WorkToBuild>
-		</statBases>
-		<designationCategory>Floors</designationCategory>
-		<fertility>0</fertility>
-		<constructEffect>ConstructDirt</constructEffect>
-		<acceptTerrainSourceFilth>True</acceptTerrainSourceFilth>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-	</TerrainDef>
-
 	<TerrainDef ParentName="FloorBase">
 		<defName>BoneFloor</defName>
 		<label>bone floor</label>

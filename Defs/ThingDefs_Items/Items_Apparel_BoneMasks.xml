@@ -104,5 +104,59 @@
       <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
     </recipeMaker>
   </ThingDef>
-  
+
+  <ThingDef ParentName="ArmorSmithableBase">
+    <defName>Sihv_Apparel_BoneArmor</defName>
+    <label>bone armor</label>
+    <description>A vest with bone plates on the chest and back. Protects against gunfire.</description>
+    <techLevel>Neolithic</techLevel>
+    <recipeMaker>
+		<workSpeedStat>SculptingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Sculpt</effectWorking>
+		<soundWorking>Recipe_Sculpt</soundWorking>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+		</recipeUsers>
+	<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+	</recipeMaker>
+    <graphicData>
+      <texPath>Things/Item/Apparel/BoneArmor/BoneArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>3</Mass>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+    </statBases>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.04</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <BoneItem>100</BoneItem>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Item/Apparel/BoneArmor/BoneArmor</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>Neolithic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
 </Defs>

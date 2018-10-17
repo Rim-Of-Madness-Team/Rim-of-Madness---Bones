@@ -7,3 +7,7 @@ C:\SteamLibrary\steamapps\common\RimWorld\Mods\Bone-Mod\Source\obj\Debug\BoneMod
 D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Rim-of-Madness---Bones\Source\obj\Debug\BoneMod.csprojResolveAssemblyReference.cache
 D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Rim-of-Madness---Bones\Source\obj\Debug\BoneMod.dll
 D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Rim-of-Madness---Bones\Assemblies\BoneMod.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rim-of-Madness---Bones\Assemblies\BoneMod.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rim-of-Madness---Bones\Source\obj\Debug\BoneMod.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rim-of-Madness---Bones\Source\obj\Debug\BoneMod.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rim-of-Madness---Bones\Source\obj\Debug\BoneMod.dll

@@ -9,7 +9,7 @@
 		<baseCost>1000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
-			<li>Refining</li>
+			<li>BiofuelRefining</li>
 		</prerequisites>
 		<researchViewX>5</researchViewX>
 		<researchViewY>4.5</researchViewY>
