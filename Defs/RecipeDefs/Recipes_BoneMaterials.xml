@@ -188,4 +188,34 @@
 		<researchPrerequisite>BoneRefine</researchPrerequisite>
 	</RecipeDef>
 	
+	<RecipeDef>
+		<defName>Make_ChemfuelFromBone</defName>
+		<label>make chemfuel from bone</label>
+		<description>Make a batch of chemfuel by turning bones into fossil fuels.</description>
+		<jobString>Refining chemfuel from bone.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>200</workAmount>
+		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BoneItem</li>
+					</thingDefs>
+				</filter>
+				<count>70</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BoneItem</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Chemfuel>35</Chemfuel>
+		</products>
+		<researchPrerequisite>BoneRefine</researchPrerequisite>
+	</RecipeDef>
+	
 </Defs>

@@ -1,63 +1,48 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]/recipes</xpath>
+		<xpath>Defs/ThingDef[defName = "BiofuelRefinery"]/recipes</xpath>
 		<value>
 			<li>MakeBonecrete</li>
 			<li>MakeBonePlastic</li>
 			<li>MakeBonePlasteel</li>
+			<li>Make_ChemfuelFromBone</li>
 		</value>
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "ElectricCrematorium"]/recipes</xpath>
+		<xpath>Defs/ThingDef[defName = "ElectricCrematorium"]/recipes</xpath>
 		<value>
 			<li>MakeBoneChina</li>
 		</value>
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "Campfire"]/recipes</xpath>
+		<xpath>Defs/ThingDef[defName = "Campfire"]/recipes</xpath>
 		<value>
 			<li>MakeBoneChina</li>
 		</value>
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "TableButcher"]/recipes</xpath>
+		<xpath>Defs/ThingDef[defName = "TableButcher"]/recipes</xpath>
 		<value>
 			<li>MakeMarrowFromBone</li>
 		</value>
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "ElectricStove"]/recipes</xpath>
+		<xpath>Defs/ThingDef[defName = "ElectricStove"]/recipes</xpath>
 		<value>
 			<li>MakeGelatinFromMarrow</li>
 		</value>
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "FueledStove"]/recipes</xpath>
+		<xpath>Defs/ThingDef[defName = "FueledStove"]/recipes</xpath>
 		<value>
 			<li>MakeGelatinFromMarrow</li>
 		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[defName = "WoodStoveFurnace"]</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "WoodStoveFurnace"]/recipes</xpath>
-				<value>
-					<li>MakeGelatinFromMarrow</li>
-				</value>
-			</li>
-		</operations>
 	</Operation>
 
 </Patch>

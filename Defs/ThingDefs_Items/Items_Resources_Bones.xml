@@ -17,6 +17,11 @@
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>0.25</Mass>
       <Flammability>0.0</Flammability>
+	  <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
       <MeleeWeapon_CooldownMultiplier>2.0</MeleeWeapon_CooldownMultiplier>
       <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.3</BluntDamageMultiplier>
@@ -74,6 +79,11 @@
     <statBases>
       <MarketValue>1.9</MarketValue>
       <Mass>0.25</Mass>
+	  <StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.54</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
       <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
       <BluntDamageMultiplier>1.0</BluntDamageMultiplier>
     </statBases>
@@ -114,6 +124,11 @@
     <statBases>
       <MarketValue>1</MarketValue>
       <Mass>0.05</Mass>
+	  <StuffPower_Armor_Sharp>0.6</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.25</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.42</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
       <SharpDamageMultiplier>0.2</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.2</BluntDamageMultiplier>
     </statBases>
@@ -154,6 +169,11 @@
     <statBases>
       <MarketValue>2.3</MarketValue>
       <Mass>0.007</Mass>
+	  <StuffPower_Armor_Sharp>0.3</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.15</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.18</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>1</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>2</StuffPower_Insulation_Heat>
       <SharpDamageMultiplier>0.1</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.1</BluntDamageMultiplier>
     </statBases>
