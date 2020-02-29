@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using System.Reflection;
 using System.Collections.Generic;
 using Verse;
@@ -14,7 +14,7 @@ namespace BoneMod
         static HarmonyPatches()
         {
 
-            var harmony = HarmonyInstance.Create("rimworld.Sihv.bonemod");
+            var harmony = new Harmony("rimworld.Sihv.bonemod");
             harmony.Patch(AccessTools.Method(typeof(Verse.Corpse), nameof(Verse.Corpse.SpecialDisplayStats)), null,
                 new HarmonyMethod(typeof(HarmonyPatches), nameof(SpecialDisplayStats_PostFix)), null);
             harmony.Patch(AccessTools.Method(typeof(Verse.Pawn), nameof(Verse.Pawn.ButcherProducts)), null,

@@ -40,7 +40,7 @@
       </defaultOutfitTags>
     </apparel>
     <recipeMaker>
-      <workSpeedStat>SculptingSpeed</workSpeedStat>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <effectWorking>Sculpt</effectWorking>
       <soundWorking>Recipe_Sculpt</soundWorking>
@@ -92,7 +92,7 @@
       </defaultOutfitTags>
     </apparel>
     <recipeMaker>
-      <workSpeedStat>SculptingSpeed</workSpeedStat>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <effectWorking>Sculpt</effectWorking>
       <soundWorking>Recipe_Sculpt</soundWorking>
@@ -111,7 +111,7 @@
     <description>A vest with bone plates on the chest and back. Protects against gunfire.</description>
     <techLevel>Neolithic</techLevel>
     <recipeMaker>
-		<workSpeedStat>SculptingSpeed</workSpeedStat>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<effectWorking>Sculpt</effectWorking>
 		<soundWorking>Recipe_Sculpt</soundWorking>

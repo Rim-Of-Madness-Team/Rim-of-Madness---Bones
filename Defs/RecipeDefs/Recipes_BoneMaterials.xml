@@ -196,7 +196,7 @@
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>200</workAmount>
-		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<ingredients>
 			<li>
 				<filter>
