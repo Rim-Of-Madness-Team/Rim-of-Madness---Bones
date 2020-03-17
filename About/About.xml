@@ -9,4 +9,12 @@
 	</supportedVersions>
 	<packageId>sihv.rombones</packageId>
 	<description>Adds bones that drop when butching creatures. They can be used to build anything that can stuffed out of wood.</description>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
 </ModMetaData>

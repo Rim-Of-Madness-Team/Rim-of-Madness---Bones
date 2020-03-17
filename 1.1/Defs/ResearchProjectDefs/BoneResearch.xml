@@ -1,0 +1,36 @@
+<Defs>
+
+	<!--=============================== Tier 3: Hi-tech research bench ===================================-->
+
+	<ResearchProjectDef>
+		<defName>BoneRefine</defName>
+		<label>bone refining</label>
+		<description>Allows the creation of bonecrete and calcium polymer at refineries.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>BiofuelRefining</li>
+		</prerequisites>
+		<researchViewX>5</researchViewX>
+		<researchViewY>4.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>BoneRefineII</defName>
+		<label>advanced bone refining</label>
+		<description>Allows the use of nanopolymer refinement to make Plasteel out of steel and calcium polymer.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>MicroelectronicsBasics</li>
+			<li>BoneRefine</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>12</researchViewX>
+		<researchViewY>4.5</researchViewY>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+	</ResearchProjectDef>
+	
+</Defs>
