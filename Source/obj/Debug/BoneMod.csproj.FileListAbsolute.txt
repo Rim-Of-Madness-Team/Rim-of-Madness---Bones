@@ -11,3 +11,10 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rim-of-Madness---Bon
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rim-of-Madness---Bones\Source\obj\Debug\BoneMod.csprojAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rim-of-Madness---Bones\Source\obj\Debug\BoneMod.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rim-of-Madness---Bones\Source\obj\Debug\BoneMod.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rim-of-Madness---Bones-master\v1.1\Assemblies\BoneMod.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rim-of-Madness---Bones-master\v1.1\Assemblies\0Harmony.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rim-of-Madness---Bones-master\1.1\Assemblies\BoneMod.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rim-of-Madness---Bones-master\1.1\Assemblies\0Harmony.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rim-of-Madness---Bones-master\Source\obj\Debug\BoneMod.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rim-of-Madness---Bones-master\Source\obj\Debug\BoneMod.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rim-of-Madness---Bones-master\Source\obj\Debug\BoneMod.dll

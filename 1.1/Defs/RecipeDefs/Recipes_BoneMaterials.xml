@@ -1,0 +1,221 @@
+<Defs>
+
+	<RecipeDef>
+		<defName>MakeBoneChina</defName>
+		<label>make bone ash</label>
+		<description>Make a batch of bone ash by burning bones at high temperatures.</description>
+		<jobString>Making bone ash.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>4000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BoneItem</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BoneItem</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BoneChina>20</BoneChina>
+		</products>
+		<researchPrerequisite>BoneRefine</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeBonecrete</defName>
+		<label>make bonecrete</label>
+		<description>Make a batch of bonecrete by extracting and refining hydroxyapatite from bone.</description>
+		<jobString>Refining bonecrete.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>4000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BoneItem</li>
+					</thingDefs>
+				</filter>
+				<count>70</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BoneItem</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Bonecrete>50</Bonecrete>
+		</products>
+		<researchPrerequisite>BoneRefine</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MakeBonePlastic</defName>
+		<label>make calcium polymer</label>
+		<description>Make a batch of calcium polymer by extracting and refining hydroxyapatite and calcium stearate from bone.</description>
+		<jobString>making calcium polymer.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>4000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BoneItem</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BoneItem</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BonePlastic>60</BonePlastic>
+		</products>
+		<researchPrerequisite>BoneRefine</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MakeBonePlasteel</defName>
+		<label>make plasteel from calcium</label>
+		<description>Make a plasteel by refining and alloying steel with calcium polymer.</description>
+		<jobString>making plasteel.</jobString>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>6000</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BonePlastic</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BoneItem</li>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Plasteel>60</Plasteel>
+		</products>
+		<researchPrerequisite>BoneRefineII</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MakeMarrowFromBone</defName>
+		<label>extract bone marrow</label>
+		<description>Crack open bones to get to the marrow inside.</description>
+		<jobString>Extracting marrow from bones.</jobString>
+		<effectWorking>ButcherFlesh</effectWorking>
+		<soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+		<workAmount>800</workAmount>
+		<workSkill>Cooking</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BoneItem</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BoneItem</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ROMB_Marrow>10</ROMB_Marrow>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MakeGelatinFromMarrow</defName>
+		<label>make gelatin</label>
+		<description>Boil marrow to produce delicious gelatin</description>
+		<jobString>Making gelatin.</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>1000</workAmount>
+		<workSkill>Cooking</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ROMB_Marrow</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ROMB_Marrow</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ROMB_Gelatin>1</ROMB_Gelatin>
+		</products>
+		<researchPrerequisite>BoneRefine</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Make_ChemfuelFromBone</defName>
+		<label>make chemfuel from bone</label>
+		<description>Make a batch of chemfuel by turning bones into fossil fuels.</description>
+		<jobString>Refining chemfuel from bone.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>200</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BoneItem</li>
+					</thingDefs>
+				</filter>
+				<count>70</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BoneItem</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Chemfuel>35</Chemfuel>
+		</products>
+		<researchPrerequisite>BoneRefine</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

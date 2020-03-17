@@ -1,27 +1,33 @@
-﻿using Harmony;
-using System.Reflection;
+﻿using HarmonyLib;
 using System.Collections.Generic;
 using Verse;
 using RimWorld;
-using System;
+using System.Reflection;
 
 namespace BoneMod
 {
     [StaticConstructorOnStartup]
     static class HarmonyPatches
     {
-
         static HarmonyPatches()
         {
+            var harmony = new Harmony("rimworld.Sihv.bonemod");
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
 
-            var harmony = HarmonyInstance.Create("rimworld.Sihv.bonemod");
-            harmony.Patch(AccessTools.Method(typeof(Verse.Corpse), nameof(Verse.Corpse.SpecialDisplayStats)), null,
-                new HarmonyMethod(typeof(HarmonyPatches), nameof(SpecialDisplayStats_PostFix)), null);
-            harmony.Patch(AccessTools.Method(typeof(Verse.Pawn), nameof(Verse.Pawn.ButcherProducts)), null,
-                new HarmonyMethod(typeof(HarmonyPatches), nameof(ButcherProducts_PostFix)), null);
+                        harmony.Patch(
+                            original: AccessTools.Method(type: typeof(Corpse), name: nameof(Corpse.SpecialDisplayStats)), 
+                            prefix: null,
+                            postfix: new HarmonyMethod(typeof(HarmonyPatches), nameof(SpecialDisplayStats_PostFix)));
+
+                        harmony.Patch(
+                            original: AccessTools.Method(type: typeof(Pawn), name: nameof(Pawn.ButcherProducts)), 
+                            prefix: null,
+                            postfix: new HarmonyMethod(typeof(HarmonyPatches), nameof(ButcherProducts_PostFix)));
+
+            //Harmony.DEBUG = true;
         }
 
-        public static void SpecialDisplayStats_PostFix(Verse.Corpse __instance, ref IEnumerable<StatDrawEntry> __result)
+        static void SpecialDisplayStats_PostFix(Corpse __instance, ref IEnumerable<StatDrawEntry> __result)
         {
             // Create a modifyable list
             List<StatDrawEntry> NewList = new List<StatDrawEntry>();
@@ -34,7 +40,6 @@ namespace BoneMod
             }
 
             // custom code to modify list contents
-            // add vanilla leather line just to verify that output is modified
             StatDef BoneAmount = DefDatabase<StatDef>.GetNamed("BoneAmount", true);
             float pawnBoneCount = __instance.InnerPawn.GetStatValue(BoneAmount, true) * BoneModSettings.boneFactor;
             NewList.Add(new StatDrawEntry(BoneAmount.category, BoneAmount, pawnBoneCount, StatRequest.For(__instance.InnerPawn), ToStringNumberSense.Undefined));
@@ -46,9 +51,10 @@ namespace BoneMod
             __result = output;
         }
 
-        static void ButcherProducts_PostFix(Verse.Pawn __instance, ref IEnumerable<Thing> __result, float efficiency)
+        static void ButcherProducts_PostFix(Pawn __instance, ref IEnumerable<Thing> __result, float efficiency)
         {
             int boneCount = GenMath.RoundRandom(__instance.GetStatValue(DefDatabase<StatDef>.GetNamed("BoneAmount", true), true) * BoneModSettings.boneFactor * efficiency);
+            int meatCountCheck = GenMath.RoundRandom(__instance.GetStatValue(DefDatabase<StatDef>.GetNamed("MeatAmount", true), true));
             if (boneCount > 0)
             {
 
@@ -57,9 +63,13 @@ namespace BoneMod
                 {
                     NewList.Add(entry);
                 }
-                Thing bones = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("BoneItem"), null);
-                bones.stackCount = boneCount;
-                NewList.Add(bones);
+                if (meatCountCheck > 1)
+                {
+                    Thing bones = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("BoneItem"), null);
+                    bones.stackCount = boneCount;
+                    NewList.Add(bones);
+                }
+
 
 
                 IEnumerable<Thing> output = NewList;
