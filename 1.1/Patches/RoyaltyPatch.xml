@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+        <success>Always</success>
+		<operations>
+			<li Class="PatchOperationInsert">
+				<xpath>*/RoyalTitleDef[defName = "Esquire" or defName = "Knight" or defName = "Praetor"]/throneRoomRequirements/li[1]/things/li</xpath>
+				<value>
+					<li>BoneChair</li>
+					<li>BoneThrone</li>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RoyalTitleDef[defName = "Baron" or defName = "Count"]/throneRoomRequirements/li[1]</xpath>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>*/RoyalTitleDef[defName = "Baron" or defName = "Count"]/throneRoomRequirements/li</xpath>
+				<value>
+					<li Class="RoomRequirement_ThingAnyOf">
+						<things>
+							<li>BoneThrone</li>
+							<li>GrandThrone</li>
+						</things>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RoyalTitleDef[@Name = "BaseEmpireTitleNPC"]/throneRoomRequirements/li[1]</xpath>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>*/RoyalTitleDef[@Name = "BaseEmpireTitleNPC"]/throneRoomRequirements/li</xpath>
+				<value>
+					<li Class="RoomRequirement_ThingAnyOf">
+						<things>
+							<li>BoneThrone</li>
+							<li>GrandThrone</li>
+						</things>
+					</li>
+				</value>
+			</li>
+		</operations>			
+	</match>
+	</Operation>
+</Patch>

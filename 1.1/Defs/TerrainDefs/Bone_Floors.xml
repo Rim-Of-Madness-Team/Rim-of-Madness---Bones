@@ -15,6 +15,9 @@
 		<costList>
 			<BoneItem>3</BoneItem>
 		</costList>
+		<tags>
+			<li>Floor</li>
+		</tags>
 		<constructEffect>ConstructWood</constructEffect>
 		<designationCategory>Floors</designationCategory>
 	</TerrainDef>
@@ -33,6 +36,9 @@
 		<costList>
 			<BoneItem>3</BoneItem>
 		</costList>
+		<tags>
+			<li>Floor</li>
+		</tags>
 		<constructEffect>ConstructWood</constructEffect>
 		<designationCategory>Floors</designationCategory>
 	</TerrainDef>
@@ -52,6 +58,9 @@
 		<costList>
 			<BoneChina>5</BoneChina>
 		</costList>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
 		<designationCategory>Floors</designationCategory>
 	</TerrainDef>
 	
@@ -72,6 +81,9 @@
 			<BoneItem>3</BoneItem>
 			<BoneChina>2</BoneChina>
 		</costList>
+		<tags>
+			<li>Floor</li>
+		</tags>
 		<designationCategory>Floors</designationCategory>
 	</TerrainDef>
 		
@@ -89,6 +101,9 @@
     <costList>
       <BoneChina>7</BoneChina>
     </costList>
+	<tags>
+		<li>Floor</li>
+	</tags>
     <constructEffect>ConstructMetal</constructEffect>
     <designationHotKey>Misc1</designationHotKey>
   </TerrainDef>
