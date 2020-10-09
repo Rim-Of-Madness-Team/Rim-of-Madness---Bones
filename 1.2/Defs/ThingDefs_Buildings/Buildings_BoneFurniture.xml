@@ -21,7 +21,6 @@
       <Beauty>4</Beauty>
       <Comfort>0.75</Comfort>
     </statBases>
-    <thingClass>Building_Throne</thingClass>
     <socialPropernessMatters>true</socialPropernessMatters>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <costList>
@@ -32,12 +31,6 @@
     <building>
       <isSittable>true</isSittable>
     </building>
-    <comps>
-      <li Class="CompProperties_AssignableToPawn">
-        <drawAssignmentOverlay>true</drawAssignmentOverlay>
-        <compClass>CompAssignableToPawn_Throne</compClass>
-      </li>
-    </comps>
     <researchPrerequisites>
       <li>ComplexFurniture</li>
     </researchPrerequisites>
@@ -76,7 +69,6 @@
       <Beauty>5</Beauty>
       <Comfort>0.9</Comfort>
     </statBases>
-    <thingClass>Building_Throne</thingClass>
     <socialPropernessMatters>true</socialPropernessMatters>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <costList>
@@ -88,12 +80,6 @@
     <building>
       <isSittable>true</isSittable>
     </building>
-    <comps>
-      <li Class="CompProperties_AssignableToPawn">
-        <drawAssignmentOverlay>true</drawAssignmentOverlay>
-        <compClass>CompAssignableToPawn_Throne</compClass>
-      </li>
-    </comps>
     <researchPrerequisites>
       <li>ComplexFurniture</li>
     </researchPrerequisites>
