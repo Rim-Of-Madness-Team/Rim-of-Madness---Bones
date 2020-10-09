@@ -12,7 +12,7 @@ namespace BoneMod
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.Look(ref BoneModSettings.boneFactor, "boneFactor", 0);
+            Scribe_Values.Look(ref boneFactor, "boneFactor", 0);
         }
 
     }
@@ -23,7 +23,7 @@ namespace BoneMod
 
         public BoneModMod(ModContentPack con) : base(con)
         {
-            this.settings = GetSettings<BoneModSettings>();
+            settings = GetSettings<BoneModSettings>();
         }
 
         public override void DoSettingsWindowContents(Rect inRect)
