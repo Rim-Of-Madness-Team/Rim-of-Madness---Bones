@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Yayo's Combat 3</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationTest">
+					<xpath>Defs/RecipeDef[defName="Make_yy_ammo_primitive"]/ingredients/li/filter/thingDefs[li="BoneItem"]</xpath>
+					<success>Invert</success>
+				</li>			
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="Make_yy_ammo_primitive"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>BoneItem</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="Make_yy_ammo_primitive"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>BoneItem</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="Make_yy_ammo_primitive"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+					<value>
+						<li>BoneItem</li>
+					</value>
+				</li>
+	
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Yayo's Combat 3</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationTest">
+					<xpath>Defs/RecipeDef[defName="Make_yy_ammo_primitive10"]/ingredients/li/filter/thingDefs[li="BoneItem"]</xpath>
+					<success>Invert</success>
+				</li>			
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="Make_yy_ammo_primitive10"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>BoneItem</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="Make_yy_ammo_primitive10"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>BoneItem</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="Make_yy_ammo_primitive10"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+					<value>
+						<li>BoneItem</li>
+					</value>
+				</li>
+	
+			</operations>
+		</match>
+	</Operation>
+
+
+
+
+</Patch>
