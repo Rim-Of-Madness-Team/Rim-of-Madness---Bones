@@ -4,6 +4,7 @@
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Yayo's Combat 3</li>
+			<li>Yayo's Combat 3 [Adopted]</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
@@ -38,6 +39,7 @@
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Yayo's Combat 3</li>
+			<li>Yayo's Combat 3 [Adopted]</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
