@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="ResourceVerbBase">
+    <defName>BoneItem</defName>
+    <label>bone</label>
+    <description>Bones from a once living thing. Useful for building structures or weapons. A bone can be used as a weapon in a pinch.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Bone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <soundInteract>Wood_Drop</soundInteract>
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.0</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>0.25</Mass>
+      <Flammability>0.0</Flammability>
+      <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <MeleeWeapon_CooldownMultiplier>2.0</MeleeWeapon_CooldownMultiplier>
+      <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.3</BluntDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <stuffAdjective>bone</stuffAdjective>
+      <categories>
+        <li>Woody</li>
+      </categories>
+      <commonality>1.00</commonality>
+      <color>(175,175,175)</color>
+      <constructEffect>ConstructWood</constructEffect>
+      <appearance>Planks</appearance>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.4</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0</Flammability>
+        <WorkToMake>0.7</WorkToMake>
+        <WorkToBuild>0.7</WorkToBuild>
+        <DoorOpenSpeed>1.2</DoorOpenSpeed>
+        <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <tools>
+      <li>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Bonecrete</defName>
+    <label>bonecrete</label>
+    <description>A light-weight concrete formed from hydroxyapatite microspheres extracted from bone. Can be used to build stone stuff.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/StoneBlocks</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(170,170,170)</color>
+    </graphicData>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <Mass>0.25</Mass>
+      <StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.54</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.00</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(170,170,170)</color>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>2.4</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0.0</Flammability>
+        <MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>BonePlastic</defName>
+    <label>calcium polymer</label>
+    <description>An extremely light-weight plastic formed from hydroxyapatite and calcium stearate extracted from bone. Can be used to build metal stuff, but is weaker than metals.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/StoneBlocks</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(180,180,180)</color>
+    </graphicData>
+    <soundInteract>Wood_Drop</soundInteract>
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1</MarketValue>
+      <Mass>0.05</Mass>
+      <StuffPower_Armor_Sharp>0.6</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.25</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.42</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.2</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.2</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <commonality>0.00</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(180,180,180)</color>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.75</MaxHitPoints>
+        <Beauty>0.75</Beauty>
+        <Flammability>0.3</Flammability>
+        <MeleeWeapon_CooldownMultiplier>0.75</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>BoneChina</defName>
+    <label>bone ash</label>
+    <description>ash made from bones burned at extremely high temperatures. Can be used to make art pieces out of bone china.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/StoneBlocks</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(170,170,170)</color>
+    </graphicData>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MarketValue>2.3</MarketValue>
+      <Mass>0.007</Mass>
+      <StuffPower_Armor_Sharp>0.3</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.15</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.18</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>1</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>2</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.1</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.1</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stuffProps>
+      <stuffAdjective>bone china</stuffAdjective>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.00</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(170,170,170)</color>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>6</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.5</MaxHitPoints>
+        <Beauty>2</Beauty>
+        <Flammability>0.0</Flammability>
+        <MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>ROMB_Marrow</defName>
+    <label>bone marrow</label>
+    <!--thingCategories>
+      <li>Foods</li>
+    </thingCategories-->
+    <description>A semi-solid meaty tissue extracted from bones. Tastes bland, but not offensive. It lasts a very long time without refrigeration.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Marrow</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+      <Mass>0.018</Mass>
+	  <MaxHitPoints>60</MaxHitPoints>
+      <WorkToMake>700</WorkToMake>
+      <DeteriorationRate>2</DeteriorationRate>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <ingestible>
+		<foodType>Meal</foodType>
+		<!--preferability>MealSimple</preferability-->
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<ingestSound>Meal_Eat</ingestSound>
+		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
+		<canAutoSelectAsFoodForCaravan>true</canAutoSelectAsFoodForCaravan>
+		<preferability>RawTasty</preferability>
+    </ingestible>
+    <comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>80</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+    </comps>
+	<thingCategories>
+		<li>AnimalProductRaw</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>ROMB_Gelatin</defName>
+    <label>gelatin</label>
+    <description>Basically Jello. It is smooth, rich, and brings joy to those who consume it. Because of its unique biological properties, it can nourish almost any creature and never rots.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Item/Resource/Jello</texPath>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>8.0</MarketValue>
+      <Mass>0.025</Mass>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>6</DeteriorationRate>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <ingestible>
+      <foodType>AnimalProduct</foodType>
+      <preferability>MealFine</preferability>
+      <joy>0.08</joy>
+      <joyKind>Gluttonous</joyKind>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+  </ThingDef>
+</Defs>

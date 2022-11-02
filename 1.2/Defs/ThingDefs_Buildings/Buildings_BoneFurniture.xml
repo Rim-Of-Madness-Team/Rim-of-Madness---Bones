@@ -53,13 +53,14 @@
     <defName>BoneThrone</defName>
     <label>skull throne</label>
     <description>A grand throne, made from bones, designed for a noble to sit and reign. Thrones define the room in which they are placed as a throneroom, and sitting on the satisfies nobles' need for authority.</description>
-    <altitudeLayer>Building</altitudeLayer>
+    <defaultPlacingRot>South</defaultPlacingRot>
+	<altitudeLayer>Building</altitudeLayer>
     <category>Building</category>
     <size>(3,2)</size>
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
-    <interactionCellOffset>(0,0,0)</interactionCellOffset>
+    <interactionCellOffset>(0,0,1)</interactionCellOffset>
     <hasInteractionCell>true</hasInteractionCell>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
@@ -75,7 +76,7 @@
       <BoneItem>1000</BoneItem>
     </costList>
     <pathCost>30</pathCost>
-    <rotatable>false</rotatable>
+<!--    <rotatable>false</rotatable> -->
     <fillPercent>0.45</fillPercent>
     <building>
       <isSittable>true</isSittable>
@@ -84,8 +85,8 @@
       <li>ComplexFurniture</li>
     </researchPrerequisites>
     <graphicData>
-      <texPath>Things/Building/Furniture/jecrellXenSkullThrone</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Furniture/BoneThroneErok/BoneThrone</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(4,2)</drawSize>
       <damageData>
         <rect>(0.05,0.1,0.9,0.9)</rect>
