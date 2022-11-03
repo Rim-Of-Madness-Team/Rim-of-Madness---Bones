@@ -1,0 +1,5 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Workspace\Rim-of-Madness---Bones\1.4\Assemblies\BoneMod.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Workspace\Rim-of-Madness---Bones\Source\obj\RW1.4\BoneMod.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Workspace\Rim-of-Madness---Bones\Source\obj\RW1.4\BoneMod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Workspace\Rim-of-Madness---Bones\Source\obj\RW1.4\BoneMod.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Workspace\Rim-of-Madness---Bones\Source\obj\RW1.4\BoneMod.dll
