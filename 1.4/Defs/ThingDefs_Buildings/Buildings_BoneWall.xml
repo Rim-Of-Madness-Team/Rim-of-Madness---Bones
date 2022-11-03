@@ -38,9 +38,10 @@
     </graphicData>
     <uiIconPath>Things/Building/Wall/jecrell_Skull_Wall_MenuIcon</uiIconPath>
     <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
+      <MaxHitPoints>300</MaxHitPoints>
       <WorkToBuild>150</WorkToBuild>
       <Flammability>0.0</Flammability>
+	  <MeditationFocusStrength>0.25</MeditationFocusStrength>
     </statBases>
     <costStuffCount>5</costStuffCount>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -61,21 +62,39 @@
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
     <blockLight>true</blockLight>
     <canOverlapZones>false</canOverlapZones>
+	<fertility>0</fertility>
     <costList>
       <BoneItem>5</BoneItem>
     </costList>
     <building>
       <isInert>true</isInert>
+	  <isPlaceOverableWall>true</isPlaceOverableWall>
+      <ai_chillDestination>false</ai_chillDestination>
       <blueprintGraphicData>
         <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
       </blueprintGraphicData>
+	  <relatedBuildCommands>
+        <li>Door</li>
+        <li>Autodoor</li>
+      </relatedBuildCommands>
     </building>
+	<comps>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Morbid</li>
+        </focusTypes>
+      </li>
+    </comps>
     <damageMultipliers>
       <li>
         <damageDef>Bomb</damageDef>
         <multiplier>2</multiplier>
       </li>
+	  <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>2</multiplier>
+      </li>
     </damageMultipliers>
-    <designationHotKey>Misc3</designationHotKey>
   </ThingDef>
 </Defs>
