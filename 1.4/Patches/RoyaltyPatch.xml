@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GrandThrone"]</xpath>
+	
+    <match Class="PatchOperationSequence">
+  <operations>
+	
+  <li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="BoneChair" or defName="BoneThrone"]</xpath>
+    <value>
+      <thingClass>Building_Throne</thingClass>
+    </value>
+  </li>
+  <li Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="BoneChair" or defName="BoneThrone"]</xpath>
+    <value>
+      <comps>
+        <li Class="CompProperties_AssignableToPawn">
+          <drawAssignmentOverlay>true</drawAssignmentOverlay>
+          <compClass>CompAssignableToPawn_Throne</compClass>
+        </li>
+        <li Class="CompProperties_MeditationFocus">
+          <statDef>MeditationFocusStrength</statDef>
+          <focusTypes>
+            <li>Dignified</li>
+          </focusTypes>
+          <offsets>
+            <li Class="FocusStrengthOffset_ThroneSatisfiesRequirements">
+              <offset>0.08</offset>
+            </li>
+            <li Class="FocusStrengthOffset_RoomImpressiveness">
+              <curve>
+                <points>
+                  <li>(0, -0.05)</li>
+                  <li>(30, 0.0)</li>
+                  <li>(60, 0.04)</li>
+                  <li>(100,  0.08)</li>
+                  <li>(170,  0.1)</li>
+                </points>
+              </curve>
+            </li>
+          </offsets>
+        </li>
+      </comps>
+    </value>
+  </li>
+  <li Class="PatchOperationInsert">
+    <xpath>/Defs/RoyalTitleDef/throneRoomRequirements/li/things/li[text()="Throne"]</xpath>
+    <value>
+      <li>BoneChair</li>
+    </value>
+  </li>
+  <li Class="PatchOperationInsert">
+    <xpath>/Defs/RoyalTitleDef/throneRoomRequirements/li/things/li[text()="GrandThrone"]</xpath>
+    <value>
+      <li>BoneThrone</li>
+    </value>
+  </li>
+  </operations>
+    </match>
+	</Operation>
+</Patch>

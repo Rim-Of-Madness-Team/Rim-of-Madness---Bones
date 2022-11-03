@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "2iLXPJ5wlfwI91wf76DMh+FHbDGtDJvFHf99tJdwMQaJeCYVnVDMhU4fZcwz3f4AaXpB6dAasymHlG1tIPUGUg==",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Workspace\\Rim-of-Madness---Bones\\Source\\BoneMod.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\krafs.rimworld.ref\\1.4.3535\\krafs.rimworld.ref.1.4.3535.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}

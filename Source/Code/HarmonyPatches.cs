@@ -14,22 +14,22 @@ namespace BoneMod
             var harmony = new Harmony("rimworld.Sihv.bonemod");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
 
-                        harmony.Patch(
-                            original: AccessTools.Method(type: typeof(Corpse), name: nameof(Corpse.SpecialDisplayStats)), 
-                            prefix: null,
-                            postfix: new HarmonyMethod(typeof(HarmonyPatches), nameof(SpecialDisplayStats_PostFix)));
+            harmony.Patch(
+                original: AccessTools.Method(type: typeof(Corpse), name: nameof(Corpse.SpecialDisplayStats)), 
+                prefix: null,
+                postfix: new HarmonyMethod(typeof(HarmonyPatches), nameof(SpecialDisplayStats_PostFix)));
 
-                        harmony.Patch(
-                            original: AccessTools.Method(type: typeof(Pawn), name: nameof(Pawn.ButcherProducts)), 
-                            prefix: null,
-                            postfix: new HarmonyMethod(typeof(HarmonyPatches), nameof(ButcherProducts_PostFix)));
+            harmony.Patch(
+                original: AccessTools.Method(type: typeof(Pawn), name: nameof(Pawn.ButcherProducts)), 
+                prefix: null,
+                postfix: new HarmonyMethod(typeof(HarmonyPatches), nameof(ButcherProducts_PostFix)));
 
             //Harmony.DEBUG = true;
         }
 
         static void SpecialDisplayStats_PostFix(Corpse __instance, ref IEnumerable<StatDrawEntry> __result)
         {
-            // Create a modifyable list
+            // Create a modifiable list
             List<StatDrawEntry> NewList = new List<StatDrawEntry>();
 
             // copy vanilla entries into the new list
@@ -69,9 +69,7 @@ namespace BoneMod
                     bones.stackCount = boneCount;
                     NewList.Add(bones);
                 }
-
-
-
+                
                 IEnumerable<Thing> output = NewList;
                 __result = output;
             }
