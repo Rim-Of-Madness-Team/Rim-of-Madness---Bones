@@ -7,7 +7,7 @@
     <jobString>Making bone ash.</jobString>
     <effectWorking>Cremate</effectWorking>
     <soundWorking>Recipe_Cremate</soundWorking>
-    <workAmount>4000</workAmount>
+    <workAmount>2000</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <ingredients>
       <li>
@@ -36,7 +36,7 @@
     <jobString>Refining bonecrete.</jobString>
     <effectWorking>Cremate</effectWorking>
     <soundWorking>Recipe_Cremate</soundWorking>
-    <workAmount>4000</workAmount>
+    <workAmount>2000</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <ingredients>
       <li>
@@ -94,7 +94,7 @@
     <jobString>making plasteel.</jobString>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
-    <workAmount>6000</workAmount>
+    <workAmount>3000</workAmount>
     <workSkill>Intellectual</workSkill>
     <ingredients>
       <li>
@@ -160,7 +160,7 @@
     <jobString>Making gelatin.</jobString>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
-    <workAmount>1000</workAmount>
+    <workAmount>400</workAmount>
     <workSkill>Cooking</workSkill>
     <ingredients>
       <li>
@@ -189,7 +189,7 @@
     <jobString>Refining chemfuel from bone.</jobString>
     <effectWorking>Cremate</effectWorking>
     <soundWorking>Recipe_Cremate</soundWorking>
-    <workAmount>200</workAmount>
+    <workAmount>400</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <ingredients>
       <li>
